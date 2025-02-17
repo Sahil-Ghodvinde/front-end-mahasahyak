@@ -5,6 +5,21 @@
 :root {
   --lk-va-bar-width: 72px;
   --lk-control-bar-height: unset;
+  --lk-bg: transparent;
+  --lk-bg-secondary: transparent;
+  --lk-border: transparent;
+  --lk-audio-visualizer-color-active: #BC3516;
+}
+
+[data-lk-theme="default"] {
+  --lk-bg: transparent;
+  --lk-bg-secondary: transparent;
+  --lk-border: transparent;
+  --lk-audio-visualizer-color-active: #BC3516;
+}
+
+.agent-visualizer > .lk-audio-bar.active {
+  background-color: var(--lk-audio-visualizer-color-active) !important;
 }
 
 .agent-visualizer > .lk-audio-bar {
